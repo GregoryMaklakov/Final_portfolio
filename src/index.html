@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"WebDev"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__main main">
+					<div class="main__container">
+						<div class="page__action">
+							<button type="button" class="page__theme"></button>
+							<button type="button" class="page__reset"></button>
+						</div>
+						<div class="main__wrp main-block">
+							<div class="main-block__img -ibg">
+								<img src="@img/avatar.png" alt="avatar">
+							</div>
+							<div class="main-block__info">
+								<h1 class="main-block__title">Mavlakov Grigory</h1>
+								<div class="main-block__sub">Front End developer</div>
+								<div class="footer-social-icons">
+									<ul class="social-icons">
+										<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+										<li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+										<li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="main__project project-items">
+							<div data-watch class="counters">
+								<div data-digits-counter class="counters__item">6</div>
+								<div class="project-items__sub">Mounth of work experience</div>
+							</div>
+							<div data-watch class="counters">
+								<div data-digits-counter class="counters__item">10</div>
+								<div class="project-items__sub">Completed projects</div>
+							</div>
+							<div data-watch class="counters">
+								<div data-digits-counter class="counters__item">10</div>
+								<div class="project-items__sub">Satisfied customers</div>
+							</div>
+						</div>
+
+						<div class="main__buttons buttons-block">
+							<button type="submit" class="buttons-block__button btn-1 effect effect-1">Download CV</button>
+							<button type="submit" class="buttons-block__button btn-2">Contact me</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
