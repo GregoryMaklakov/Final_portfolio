@@ -5,10 +5,23 @@
     &__text {
         font-style: normal;
         font-weight: 400;
-        @include adaptiveValue("font-size", 22, 16);
+        @include adaptiveValue("font-size", 20, 16);
         line-height: 33px;
-        color: rgba(163, 171, 178, 0.5);
         text-align: center;
+    }
+}
+html.dark body {
+    .footer {
+        &__text {
+            color: rgba(163, 171, 178, 0.5);
+        }
+    }
+}
+html.light body {
+    .footer {
+        &__text {
+            color: rgba(37, 39, 41, 0.5);
+        }
     }
 }
 //====================================================================================================

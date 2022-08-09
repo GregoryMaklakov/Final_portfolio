@@ -32,6 +32,7 @@
 	&__body {
 	}
 }	
+
 // Анимация табов при наведении 
 $template-color:#FFE071; // цвет заполнения
 $tmpt-bg-clr:#FDF9F8;  // цвет шкалы перел заполнением 
@@ -43,6 +44,7 @@ $tmpt-bg-clr:#FDF9F8;  // цвет шкалы перел заполнением
     }
 }
 
+// Смена цвета блока навигации при изменении общего цыета страницы ( Dark & Ligyt )
 html.dark body {
 	.tabs {
 		&__navigation {
@@ -89,7 +91,8 @@ html.light body {
 		}
 	}
 }
-// CARDs ...................
+
+// CARDS  ...............................................................................................
 .section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -100,7 +103,6 @@ html.light body {
 		flex-wrap: wrap; 
 	}
 }
-
   .card {
 	min-width: 362px;
 	height: 226px;
@@ -109,6 +111,9 @@ html.light body {
 	position: relative;
 	border-radius: 7px;
 	perspective: 2000px;
+	@media (max-width: em(375)){
+		min-width: 290px;
+	}
 	&:hover &-front {
 	  transform: rotateY(180deg);
 	}
@@ -140,7 +145,7 @@ html.light body {
 	   }
 	}
 	&-back {
-		background: linear-gradient(0deg, rgba(255, 224, 113, 0.88), rgba(255, 224, 113, 0.88));
+		background: linear-gradient(0deg, rgba(229, 223, 203, 0.88), rgba(255, 224, 113, 0.88));
 		color: #FFFFFF;
 		transform: rotateY(180deg);
 	  	&__title {
@@ -168,5 +173,43 @@ html.light body {
 			letter-spacing: -0.531474px;
 			color: #3D3D3D;
 		}
+	}
+}
+// CARDS  END ...............................................................................................
+
+// SkillSet ...............................................................................................
+
+.skills-block {
+
+	&__title {
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 33px;
+		color: #A3ABB2;
+		text-align: center;
+	}
+
+	&__subtitle {
+		margin-top: rem(22);
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 33px;
+		color: #A3ABB2;
+		text-align: center;
+	}
+
+	&__wrp {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		margin-top: rem(70);
+		flex-wrap: wrap;
+		gap: rem(32);
+	}
+
+	&__image {
+		width: 125px;
+		height: 113px;
 	}
 }

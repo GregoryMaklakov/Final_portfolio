@@ -1,7 +1,37 @@
-.page {
-    &__main {
+
+// Darck-Light Theme ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+html.dark .page__theme {
+	background: url("https://maklakovgrigory.com/img/darck.svg") 0 0 / 100% no-repeat;
+	width: 50px;
+	height: 50px;
+    img {
+        width: 50px;
+	    height: 50px;
     }
 }
+html.light .page__theme {
+	background: url("https://maklakovgrigory.com/img/light.svg") 0 0 / 100% no-repeat;
+	width: 50px;
+	height: 50px;
+    img {
+        width: 50px;
+	    height: 50px;
+    }
+}
+.page__action{
+	position: relative;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: rem(20);
+}
+.page__reset.active{
+	opacity: 1;
+	visibility: visible;
+}
+// Darck-Light Theme END ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+
 //========================================  Main   =================================================
 
 .main {
@@ -241,7 +271,7 @@ html.light body {
     transition: all 0.2s linear 0s;   
     &:before {
       content:"";
-      background-image: url(img/arrow_dawn.svg);
+      background-image: url(https://maklakovgrigory.com/img/arrow_dawn.svg);
       background-repeat: no-repeat;
       font-size: 15px;
       position: absolute;
