@@ -186,46 +186,156 @@ html.light body {
 }
 // CARDS  END ...............................................................................................
 
-// SkillSet ...............................................................................................
 
-.skills-block {
-	&__title {
-		font-weight: 500;
-		font-size: 22px;
-		line-height: 33px;
-		color: #A3ABB2;
-		text-align: center;
-	}
-	&__subtitle {
-		margin-top: rem(22);
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 33px;
-		color: #A3ABB2;
-		text-align: center;
-	}
-	&__wrp {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-around;
-		margin-top: rem(70);
-		flex-wrap: wrap;
-		gap: rem(32);
-	}
-	&__image {
-		width: 125px;
-		height: 113px;
-	}
+//========================================== SKILL Set ==========================================================
+.skills-block{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: em(768)){
+          justify-content: center;
+          align-items: center;
+          gap: rem(40);
+    }
+  }
+.skills-block .skills{
+    position: relative;
+}
+  
+.skills-block .skills .face{
+    width: 350px;
+    height: 250px;
+    transition:.4s;
+    position: relative;
+}
+  
+.skills-block .skills .face.face1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(125px);
+}
+.skills-block .skills .face.face1 .content{
+    opacity: .3;
+    transition:  0.5s;
+    text-align: center;
+}
+  
+.skills-block .skills:hover .face.face1 .content{
+    opacity: 1;
+}
+  
+.skills-block .skills .face.face1 .content i{
+    font-size: 4em;
+    display: inline-block;
+}
+  
+.skills-block .skills .face.face1 .content h3{
+    font-size: 22px;
+    text-align: center;
+    margin-top: rem(10);
+    font-family: 'Poppins';
+}
+  
+.skills-block .skills .face.face1 .content a{
+    transition: .5s;
+}
+  
+.skills-block .skills .face.face2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.8);
+    transform: translateY(-125px);
+}
+  
+.skills-block .skills:hover .face.face2{
+    transform: translateY(0);
+}
+  
+.skills-block .skills .face.face2 .content p, a{
+    font-size: rem(16);
+    line-height: 18px;
+    margin: 0 ;
+    padding: 0;
+    color:rgb(34, 34, 34);
+}
+  
+.skills-block .skills .face.face2 .content a{
+    text-decoration:none;
+    color: black;
+    box-sizing: border-box;
+    outline : 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+}
+  
+.skills-block .skills .face.face2 .content a:hover{
+    background: #333 ;
+    color: whitesmoke; 
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+html.dark body {
+    .skills-block .skills:hover .face.face1{
+        transform: translateY(0);
+        box-shadow:
+            inset 0 0 60px rgb(223, 223, 188),
+            inset 20px 0 80px #fae190,
+            inset -20px 0 80px #3c4349,
+            inset 20px 0 300px #fae190,
+            inset -20px 0 300px #3c4349,
+            0 0 50px rgb(219, 197, 162),
+            -10px 0 80px #fae190,
+            10px 0 80px #3c4349;
+    }
+    .skills-block .skills .face.face1{
+        background: #171F26;
+    }
+    .skills-block .skills .face.face1 .content i{
+        color: #fae190;
+    }
+    .skills-block .skills .face.face1 .content h3{
+        color: #fae190;
+    }
+    .skills-block .skills .face.face2{
+        background: #fae190;
+        opacity: .3;
+    }
 }
 html.light body {
-	.skills-block {
-		&__title {
-			color: #3D3D3D;
-		}
-		&__subtitle {
-			color: #3D3D3D;
-		}
-	}
+    .skills-block .skills:hover .face.face1{
+        transform: translateY(0);
+        box-shadow:
+        inset 0 0 60px #ECFC71,
+        inset 20px 0 80px #FFB473,
+        inset -20px 0 80px #ECFC71,
+        inset 20px 0 300px #FFB473,
+        inset -20px 0 300px #ECFC71,
+        0 0 50px #fff,
+        -10px 0 80px #FFB473,
+        10px 0 80px #ECFC71; 
+    }
+    .skills-block .skills .face.face1{
+        background: #FFDF73;
+    }
+    .skills-block .skills .face.face1 .content i{
+        color: #1d1c1a;
+        opacity: .5;
+    }
+    .skills-block .skills .face.face1 .content h3{
+        color: #101011;
+    }
+    .skills-block .skills .face.face2{
+        background: rgba(163, 171, 178, 0.5);
+    }
 }
-// SkillSet END ...............................................................................................
+
+//========================================== SKILL Set ==========================================================
+
