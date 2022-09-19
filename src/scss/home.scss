@@ -79,6 +79,7 @@ html.light body {
     &__img {
         width: 215px;
         height: 215px;
+        filter: grayscale(0.4);
     }
     &__info {
         display: flex;

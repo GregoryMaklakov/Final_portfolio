@@ -1,6 +1,6 @@
- ;pbody::after {
+ body::after {
 	content: "";
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -64,9 +64,14 @@
 	color: #595959;
 	margin-bottom: rem(10);
 	transition: .5s all;
+	border: none;
+	width: 30px;
+	height: 30px;
+	background-color: #E5E5E5;
+	border-radius: 50%;
 	@media (any-hover: hover){
 		&:hover{
-			color: #FB6D3A;
+			background-color: #c1bdbd;
 		}
 	}
 }
@@ -261,7 +266,7 @@
 		font-weight: 700;
 		font-size: 16px;
 		line-height: 20px;
-		margin-top: rem(12);
+		margin-top: rem(30);
 		span {
 			color: #FB6D3A;
 		}
@@ -276,8 +281,6 @@
 		font-size: 12px;
 		line-height: 15px;
 		color: #A8A8A8;
-		.date {
-		}
 		.place {
 			position: relative;
 			&::before {
@@ -290,16 +293,14 @@
 			}
 		}
 	}
-	&__lists {
-	}
 	&__list {
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 24px;
 		color: #595959;
 		position: relative;
-		margin-top: rem(10);
 		padding-left: rem(20);
+		margin-top: rem(6);
 		&::before{
 			content:'';
 			position: absolute;
