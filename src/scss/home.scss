@@ -79,6 +79,7 @@ html.light body {
     &__img {
         width: 215px;
         height: 215px;
+        filter: grayscale(0.4);
     }
     &__info {
         display: flex;
@@ -128,18 +129,6 @@ ul.social-icons {
 .social-icons a {
     color: #fff;
     text-decoration: none;
-}
-.fa-facebook {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-facebook:hover {
-    background-color: #3d5b99;
 }
 .fa-linkedin {
     padding:10px 14px;
@@ -271,15 +260,14 @@ html.light body {
     transition: all 0.2s linear 0s;   
     &:before {
       content:"";
-      background-image: url(https://maklakovgrigory.com/img/arrow_dawn.svg);
+      background-image: url(https://maklakovgrigory.com/img/eye.svg);
       background-repeat: no-repeat;
-      font-size: 15px;
       position: absolute;
       display: flex;
       align-items: center;
       justify-content: center;
       right: 20px;
-      top: 50%;
+      top: 58%;
       transform: translateY(-50%);
       opacity: 0;
       height: 30px;
@@ -295,5 +283,4 @@ html.light body {
     }
   }
 //==========================================  Main END  ==========================================================
-
 

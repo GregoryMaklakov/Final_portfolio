@@ -65,4 +65,3 @@ function windowLoad() {
 		saveTheme ? localStorage.setItem('user-theme', newTheme) : null;
 	}
 }
- 
