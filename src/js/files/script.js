@@ -5,12 +5,8 @@ import { flsModules } from "./modules.js";
 // Подключение type - анимация печатания текста
 import Typed from 'typed.js';
 
-
-"use strict"
-
-
 window.addEventListener("load", windowLoad);
-// Смена цветовой темы всего сайта 
+// анимация печати 
 var typed = new Typed('#typed', {
     stringsElement: '#typed-strings', // Тут id блока из которого берем строки для анимации
     typeSpeed: 50, // Скорость печати
@@ -19,8 +15,9 @@ var typed = new Typed('#typed', {
     backSpeed: 10, // Скорость удаления
     showCursor: false, // показивать курсор
     loop: false // Указываем, повторять ли анимацию
-  });
+});
 //================================
+// Смена цветовой темы всего сайта 
 function windowLoad() {
 	// HTML
 	const htmlBlock = document.documentElement;
@@ -79,4 +76,6 @@ function windowLoad() {
 		htmlBlock.classList.add(newTheme);
 		saveTheme ? localStorage.setItem('user-theme', newTheme) : null;
 	}
+	new WOW().init();
 }
+
