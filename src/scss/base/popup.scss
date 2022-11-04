@@ -208,6 +208,13 @@
 		color: #3D3D3D;
 		@include adaptiveValue("margin-top", 20, 10);
 	}
+	&__birth {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: #A8A8A8;
+		@include adaptiveValue("margin-top", 20, 10);
+	}
 	&__text {
 		font-weight: 400;
 		font-size: 14px;
@@ -276,7 +283,6 @@
 		display: flex;
 		flex-direction: row;
 		gap: rem(30);
-		font-style: normal;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 15px;
