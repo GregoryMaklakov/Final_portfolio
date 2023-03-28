@@ -222,6 +222,13 @@
 		color: #595959;
 		@include adaptiveValue("margin-top", 20, 10);
 	}
+	&__link-merge {
+		@media (any-hover: hover){
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
 }
 .descr-project {
 	font-weight: 700;

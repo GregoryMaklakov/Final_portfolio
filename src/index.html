@@ -1,144 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"WebDev"
-	})
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2W9EXFB6JP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-2W9EXFB6JP');
-</script>
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-				<section class="page__main main">
-					<div class="main__container">
-						<div class="page__action">
-							<button type="button" class="page__theme"></button>
-							<button type="button" class="page__reset"></button>
-						</div>
-						<div class="main__wrp main-block">
-							<div data-prlx-mouse data-prlx-cx="200" data-prlx-cy="200" class="main-block__img -ibg">
-								<img src="@img/avarar-sec.jpg"  alt="avatar">
-							</div>
-							<div class="main-block__info">
-								<h1 class="main-block__title animate__animated animate__slideInDown">Grigory Maklakov</h1>
-								<div id="typed-strings" class="main-block__tupe">
-									<div  class="main-block__sub">Front End developer</div>
-									<div  class="main-block__sub">From Warsaw</div>
-								</div>
-								<span class="main-block__text" id="typed"></span>
-								<div class="footer-social-icons">
-									<ul class="social-icons">
-										<li><a href="https://www.linkedin.com/in/grigory-maklakov-331a641ba/" class="social-icon"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="https://github.com/GregoryMaklakov" class="social-icon"> <i class="fa fa-github"></i></a></li>
-										<li><a href="https://www.instagram.com/grigoriimaklakov/" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="main__project project-items">
-							<div data-watch class="counters">
-								<div data-digits-counter class="counters__item">6</div>
-								<div class="project-items__sub">Mounth of work experience</div>
-							</div>
-							<div data-watch class="counters">
-								<div data-digits-counter class="counters__item">10</div>
-								<div class="project-items__sub">Completed projects</div>
-							</div>
-							<div data-watch class="counters">
-								<div data-digits-counter class="counters__item">10</div>
-								<div class="project-items__sub">Satisfied customers</div>
-							</div>
-						</div>
+  @@include('html/_head.htm',{ "title":"WebDev" })
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-2W9EXFB6JP"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-2W9EXFB6JP");
+  </script>
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="page__main main">
+          <div class="main__container">
+            <div class="page__action">
+              <button type="button" class="page__theme"></button>
+              <button type="button" class="page__reset"></button>
+            </div>
+            <div class="main__wrp main-block">
+              <div
+                data-prlx-mouse
+                data-prlx-cx="200"
+                data-prlx-cy="200"
+                class="main-block__img -ibg"
+              >
+                <img src="@img/avarar-sec.jpg" alt="avatar" />
+              </div>
+              <div class="main-block__info">
+                <h1
+                  class="main-block__title animate__animated animate__slideInDown"
+                >
+                  Grigory Maklakov
+                </h1>
+                <div id="typed-strings" class="main-block__tupe">
+                  <div class="main-block__sub">Front End developer</div>
+                  <div class="main-block__sub">From Warsaw</div>
+                </div>
+                <span class="main-block__text" id="typed"></span>
+                <div class="footer-social-icons">
+                  <ul class="social-icons">
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/grigory-maklakov-331a641ba/"
+                        class="social-icon"
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/GregoryMaklakov"
+                        class="social-icon"
+                      >
+                        <i class="fa fa-github"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/grigoriimaklakov/"
+                        class="social-icon"
+                      >
+                        <i class="fa fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main__project project-items">
+              <div data-watch class="counters">
+                <div data-digits-counter class="counters__item">6</div>
+                <div class="project-items__sub">Mounth of work experience</div>
+              </div>
+              <div data-watch class="counters">
+                <div data-digits-counter class="counters__item">10</div>
+                <div class="project-items__sub">Completed projects</div>
+              </div>
+              <div data-watch class="counters">
+                <div data-digits-counter class="counters__item">10</div>
+                <div class="project-items__sub">Satisfied customers</div>
+              </div>
+            </div>
 
-						<div class="main__buttons buttons-block">
-							<a href="#" data-popup="#popup" type="submit" class="buttons-block__button btn-1 effect effect-1">Watch CV</a>
-						<a href="mailto:maklakov.grigory@gmail.com">
-							<button type="submit" class="buttons-block__button btn-2">Contact me</button>
-						</a>	
-						</div>
-					</div>
-				</section>
-				<section class="page__tabs tabs-block">
-					<div class="tabs-block__container">
-						<div data-tabs class="tabs">
-							<nav data-tabs-titles class="tabs__navigation">
-								<button type="button" class="tabs__title _tab-active">Portfolio</button>
-								<button type="button" class="tabs__title">Skills</button>
-							</nav>
-							<div data-tabs-body class="tabs__content">
-								<div class="tabs__body">
-									<div class="section" data-watch-root>
+            <div class="main__buttons buttons-block">
+              <a
+                href="#"
+                data-popup="#popup"
+                type="submit"
+                class="buttons-block__button btn-1 effect effect-1"
+                >Watch CV</a
+              >
+              <a href="mailto:maklakov.grigory@gmail.com">
+                <button type="submit" class="buttons-block__button btn-2">
+                  Contact me
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="page__tabs tabs-block">
+          <div class="tabs-block__container">
+            <div data-tabs class="tabs">
+              <nav data-tabs-titles class="tabs__navigation">
+                <button type="button" class="tabs__title _tab-active">
+                  Portfolio
+                </button>
+                <button type="button" class="tabs__title">Skills</button>
+              </nav>
+              <div data-tabs-body class="tabs__content">
+                <div class="tabs__body">
+                  <div class="section" data-watch-root>
+                    <!-- ? Raect- TODO-App -->
+                    <div data-tippy-content="click me" class="card">
+                      <a
+                        href="https://release-todo-react.netlify.app/"
+                        target="_blank"
+                        class="card-front card-front__image -ibg"
+                      >
+                        <img src="@img/todo-react.jpg" alt="TodoReact app" />
+                      </a>
+                      <a
+                        href="https://release-todo-react.netlify.app/"
+                        target="_blank"
+                        class="card-back"
+                      >
+                        <h3 class="card-back__title">React TODO-App</h3>
+                        <p class="card-back__sub">
+                          Fully working TODO web-application<br /><br />Click
+                          for watch
+                        </p>
+                      </a>
+                    </div>
 
-										<div data-tippy-content="click me" class="card">
-											<a href="https://cryptoryance-merge-24.netlify.app/" target="_blank" class="card-front card-front__image -ibg" >
-												<img src="@img/09.jpg" alt="Cryptiriance">
-											</a>
-											<a href="https://cryptoryance-merge-24.netlify.app/" target="_blank" class="card-back">
-												<h3 class="card-back__title">Cryptoryance</h3>
-												<p class="card-back__sub">Used SVG-animation, css-slider <br><br>Click for watch</p>
-											</a>
-										</div>
-										<div class="card">
-											<a href="https://gregorymaklakov.github.io/WarmVest/dist/" target="_blank" class="card-front card-front__image -ibg" >
-												<img src="@img/01.jpg" alt="FarmVest">
-											</a>
-											<a href="https://gregorymaklakov.github.io/WarmVest/dist/" target="_blank" class="card-back">
-												<h3 class="card-back__title">Landing investment page </h3>
-												<p class="card-back__sub">Used popup, paralax, adaptive properties <br><br>Click for watch</p>
-											</a>
-										</div>
-										<div class="card">
-											<a href="https://gregorymaklakov.github.io/inBox/dist/" target="_blank" class="card-front card-front__image -ibg">
-												<img src="@img/02.jpg" alt="InABox">
-											</a>
-											<a href="https://gregorymaklakov.github.io/inBox/dist/" target="_blank" class="card-back">
-												<h3 class="card-back__title">Landing page </h3>
-												<p class="card-back__sub">Used tabs, paralax, slider & adaptive properties<br><br>Click for watch</p>
-											</a>
-										</div>
-										<div class="card">
-											<a href="https://gregorymaklakov.github.io/zlatman/dist/" target="_blank" class="card-front card-front__image -ibg">
-												<img src="@img/07.jpg" alt="ZlatMan">
-											</a>
-											<a href="https://gregorymaklakov.github.io/zlatman/dist/" target="_blank" class="card-back">
-												<h3 class="card-back__title">Knife shop </h3>
-												<p class="card-back__sub">Used tabs, paralax, slider & adaptive properties<br><br>Click for watch</p>
-											</a>
-										</div>
-										<div class="card">
-											<a href="https://gregorymaklakov.github.io/john/dist/" target="_blank" class="card-front card-front__image -ibg">
-												<img src="@img/03.jpg" alt="first">
-											</a>
-											<a href="https://gregorymaklakov.github.io/john/dist/" target="_blank" class="card-back">
-												<h3 class="card-back__title">Creative portfolio</h3>
-												<p class="card-back__sub">Simple page with interesting design & particular social buttons<br><br>Click for watch</p>
-											</a>
-										</div>
-										<div class="card">
-											<a href="https://gregorymaklakov.github.io/mntn/dist/" target="_blank" class="card-front card-front__image -ibg">
-												<img src="@img/04.jpg" alt="first">
-											</a>
-											<a href="https://gregorymaklakov.github.io/mntn/dist/" target="_blank" class="card-back">
-												<h3 class="card-back__title">Beautiful travel blog</h3>
-												<p class="card-back__sub">Simple page with interesting design<br><br>Click for watch</p>
-											</a>
-										</div>
-										<div class="card">
-											<a href="https://gregorymaklakov.github.io/novex/" target="_blank" class="card-front card-front__image -ibg">
-												<img src="@img/08.jpg" alt="Novex">
-											</a>
-											<a href="https://gregorymaklakov.github.io/novex/" target="_blank" class="card-back">
-												<h3 class="card-back__title">Novex</h3>
-												<p class="card-back__sub">Simple page with interesting design<br><br>Click for watch</p>
-											</a>
-										</div>
-										<div class="card">
+                    <!-- ? Cryptoriance -->
+                    <div class="card">
+                      <a
+                        href="https://cryptoriance-merge.netlify.app/"
+                        target="_blank"
+                        class="card-front card-front__image -ibg"
+                      >
+                        <img src="@img/09.jpg" alt="Cryptiriance" />
+                      </a>
+                      <a
+                        href="https://cryptoriance-merge.netlify.app/"
+                        target="_blank"
+                        class="card-back"
+                      >
+                        <h3 class="card-back__title">Cryptoryance</h3>
+                        <p class="card-back__sub">
+                          Used SVG-animation, css-slider <br /><br />Click for
+                          watch
+                        </p>
+                      </a>
+                    </div>
+
+                    <!-- ? Todolist(JS) -->
+                    <div class="card">
+                      <a
+                        href="https://todolist-hw36.netlify.app/"
+                        target="_blank"
+                        class="card-front card-front__image -ibg"
+                      >
+                        <img src="@img/todo.jpg" alt="Todo" />
+                      </a>
+                      <a
+                        href="https://todolist-hw36.netlify.app/"
+                        target="_blank"
+                        class="card-back"
+                      >
+                        <h3 class="card-back__title">Java Script TODO-App</h3>
+                        <p class="card-back__sub"><br />Click for watch</p>
+                      </a>
+                    </div>
+
+                    <!-- ? Auth0 -->
+                    <div class="card">
+                      <a
+                        href="https://auth0-marge-academy.netlify.app/"
+                        target="_blank"
+                        class="card-front card-front__image -ibg"
+                      >
+                        <img src="@img/aut0.png" alt="Aut0" />
+                      </a>
+                      <a
+                        href="https://auth0-marge-academy.netlify.app/"
+                        target="_blank"
+                        class="card-back"
+                      >
+                        <h3 class="card-back__title">
+                          Landing investment page
+                        </h3>
+                        <p class="card-back__sub">
+                          Used popup, dropdawn & smart animations<br /><br />Click
+                          for watch
+                        </p>
+                      </a>
+                    </div>
+
+                    <!-- ? Novex -->
+                    <div class="card">
+                      <a
+                        href="https://gregorymaklakov.github.io/novex/"
+                        target="_blank"
+                        class="card-front card-front__image -ibg"
+                      >
+                        <img src="@img/08.jpg" alt="Novex" />
+                      </a>
+                      <a
+                        href="https://gregorymaklakov.github.io/novex/"
+                        target="_blank"
+                        class="card-back"
+                      >
+                        <h3 class="card-back__title">Novex</h3>
+                        <p class="card-back__sub">
+                          Simple page with interesting design<br /><br />Click
+                          for watch
+                        </p>
+                      </a>
+                    </div>
+
+                    <!-- ? WarmVest -->
+                    <div class="card">
+                      <a
+                        href="https://gregorymaklakov.github.io/WarmVest/dist/"
+                        target="_blank"
+                        class="card-front card-front__image -ibg"
+                      >
+                        <img src="@img/01.jpg" alt="FarmVest" />
+                      </a>
+                      <a
+                        href="https://gregorymaklakov.github.io/WarmVest/dist/"
+                        target="_blank"
+                        class="card-back"
+                      >
+                        <h3 class="card-back__title">
+                          Landing investment page
+                        </h3>
+                        <p class="card-back__sub">
+                          Used popup, paralax, adaptive properties
+                          <br /><br />Click for watch
+                        </p>
+                      </a>
+                    </div>
+
+                    <!-- ? inBox -->
+                    <div class="card">
+                      <a
+                        href="https://gregorymaklakov.github.io/inBox/dist/"
+                        target="_blank"
+                        class="card-front card-front__image -ibg"
+                      >
+                        <img src="@img/02.jpg" alt="InABox" />
+                      </a>
+                      <a
+                        href="https://gregorymaklakov.github.io/inBox/dist/"
+                        target="_blank"
+                        class="card-back"
+                      >
+                        <h3 class="card-back__title">Landing page</h3>
+                        <p class="card-back__sub">
+                          Used tabs, paralax, slider & adaptive properties<br /><br />Click
+                          for watch
+                        </p>
+                      </a>
+                    </div>
+
+                    <!-- ? Zlatman -->
+                    <div class="card">
+                      <a
+                        href="https://gregorymaklakov.github.io/zlatman/dist/"
+                        target="_blank"
+                        class="card-front card-front__image -ibg"
+                      >
+                        <img src="@img/07.jpg" alt="ZlatMan" />
+                      </a>
+                      <a
+                        href="https://gregorymaklakov.github.io/zlatman/dist/"
+                        target="_blank"
+                        class="card-back"
+                      >
+                        <h3 class="card-back__title">Knife shop</h3>
+                        <p class="card-back__sub">
+                          Used tabs, paralax, slider & adaptive properties<br /><br />Click
+                          for watch
+                        </p>
+                      </a>
+                    </div>
+
+                    <!-- ? John -->
+                    <div class="card">
+                      <a
+                        href="https://gregorymaklakov.github.io/john/dist/"
+                        target="_blank"
+                        class="card-front card-front__image -ibg"
+                      >
+                        <img src="@img/03.jpg" alt="first" />
+                      </a>
+                      <a
+                        href="https://gregorymaklakov.github.io/john/dist/"
+                        target="_blank"
+                        class="card-back"
+                      >
+                        <h3 class="card-back__title">Creative portfolio</h3>
+                        <p class="card-back__sub">
+                          Simple page with interesting design & particular
+                          social buttons<br /><br />Click for watch
+                        </p>
+                      </a>
+                    </div>
+
+                    <!-- ? MNTN -->
+                    <div class="card">
+                      <a
+                        href="https://gregorymaklakov.github.io/mntn/dist/"
+                        target="_blank"
+                        class="card-front card-front__image -ibg"
+                      >
+                        <img src="@img/04.jpg" alt="first" />
+                      </a>
+                      <a
+                        href="https://gregorymaklakov.github.io/mntn/dist/"
+                        target="_blank"
+                        class="card-back"
+                      >
+                        <h3 class="card-back__title">Beautiful travel blog</h3>
+                        <p class="card-back__sub">
+                          Simple page with interesting design<br /><br />Click
+                          for watch
+                        </p>
+                      </a>
+                    </div>
+                    <!-- ? explorer -->
+                    <!-- <div class="card">
 											<a href="https://gregorymaklakov.github.io/explorer/dist/" target="_blank" class="card-front card-front__image -ibg">
 												<img src="@img/06.jpg" alt="EXP">
 											</a>
@@ -146,8 +345,9 @@
 												<h3 class="card-back__title">Explorer</h3>
 												<p class="card-back__sub">Simple page with interesting design<br><br>Click for watch</p>
 											</a>
-										</div>
-										<div class="card">
+										</div> -->
+                    <!-- ? realestate -->
+                    <!-- <div class="card">
 											<a href="https://gregorymaklakov.github.io/realestate/dist/" class="card-front card-front__image -ibg">
 												<img src="@img/05.jpg" alt="RealEstate">
 											</a>
@@ -155,21 +355,18 @@
 												<h3 class="card-back__title">Real Estate</h3>
 												<p class="card-back__sub">Simple page with interesting design<br><br>Click for watch</p>
 											</a>
-										</div>
-									  </div>
-								</div>
+										</div> -->
+                  </div>
+                </div>
 
-								<div class="tabs__body">
-									...
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+                <div class="tabs__body">...</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
 </html>
