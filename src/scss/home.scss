@@ -1,34 +1,35 @@
-
 // Darck-Light Theme ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 html.dark .page__theme {
-	background: url("https://maklakovgrigory.com/img/darck.svg") 0 0 / 100% no-repeat;
-	width: 50px;
-	height: 50px;
-    img {
-        width: 50px;
-	    height: 50px;
-    }
+  background: url("https://maklakovgrigory.com/img/darck.svg") 0 0 / 100%
+    no-repeat;
+  width: 50px;
+  height: 50px;
+  img {
+    width: 50px;
+    height: 50px;
+  }
 }
 html.light .page__theme {
-	background: url("https://maklakovgrigory.com/img/light.svg") 0 0 / 100% no-repeat;
-	width: 50px;
-	height: 50px;
-    img {
-        width: 50px;
-	    height: 50px;
-    }
+  background: url("https://maklakovgrigory.com/img/light.svg") 0 0 / 100%
+    no-repeat;
+  width: 50px;
+  height: 50px;
+  img {
+    width: 50px;
+    height: 50px;
+  }
 }
-.page__action{
-	position: relative;
-	text-align: center;
-	display: block;
-	margin: 0 auto;
-	margin-top: rem(20);
+.page__action {
+  position: relative;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: rem(20);
 }
-.page__reset.active{
-	opacity: 1;
-	visibility: visible;
+.page__reset.active {
+  opacity: 1;
+  visibility: visible;
 }
 // Darck-Light Theme END ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 
@@ -37,255 +38,294 @@ html.light .page__theme {
 // Darck-Light Theme ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 html.dark body {
-	color: #F1F2F4;
-	background-color: #0C151D;
-    .counters {
-        color: #A3ABB2;
-    }
+  color: #f1f2f4;
+  background-color: #0c151d;
+  .counters {
+    color: #a3abb2;
+  }
 }
 html.light body {
-	background-color: #E5E5E5;
-	color: #3D3D3D;
-	.main-block {
-		&__sub {
-			color: #575757;
-		}
-        &__text {
-            color: #575757;;
-        }
-	}
-    .counters {
-        color: #575757;
+  background-color: #e5e5e5;
+  color: #3d3d3d;
+  .main-block {
+    &__sub {
+      color: #575757;
     }
+    &__text {
+      color: #575757;
+    }
+  }
+  .counters {
+    color: #575757;
+  }
 }
 
 // Darck-Light Theme end ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 .main-block {
-    margin-top: rem(65);
+  margin-top: rem(65);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: rem(40);
+  flex-wrap: wrap;
+  &__img {
+    width: $image-size;
+    height: $image-size;
+    img {
+      border-radius: 50%;
+      transition: 0.5s ease;
+      box-shadow: 0 0 0 5px #ffe071;
+      filter: grayscale(0.4);
+      @media (any-hover: hover) {
+        &:hover {
+          animation: bounceOut 0.6s linear;
+        }
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: rem(12);
+    @media (max-width: $mobile) {
+      align-items: center;
+    }
+  }
+  &__title {
+    font-size: rem(46);
+    line-height: 69px;
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
+  }
+  &__text {
+    color: #a3abb2;
+  }
+  &__sub {
+    font-size: 22px;
+    line-height: 33px;
+    color: #a3abb2;
+  }
+  &__social {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: rem(40);
-    flex-wrap: wrap;
-    &__img {
-        width: $image-size;
-        height: $image-size;
-        img {
-            border-radius: 50%;
-            transition: 0.5s ease;
-            box-shadow: 0 0 0 5px #FFE071;
-            filter: grayscale(0.4);
-            @media (any-hover: hover){
-                &:hover{
-                    animation:bounceOut .6s linear;
-                }
-            }
-        }
-    }
-    &__info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: rem(12);
-        @media (max-width:$mobile){
-             align-items: center; 
-        }
-    }
-    &__title {
-        font-size: rem(46);
-        line-height: 69px;
-        @media (max-width:$mobile){
-             text-align: center; 
-        }
-    }
-    &__text {
-        color: #A3ABB2;
-
-    }
-    &__sub {
-        font-size: 22px;
-        line-height: 33px;
-        color: #A3ABB2;
-    }
-    &__social {
-        display: flex;  
-        flex-direction: row;
-        gap: rem(28);
-    }
+    gap: rem(28);
+  }
 }
 
 // SIOCIAL icons ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .social-icon {
-    color: #fff;
+  color: #fff;
 }
 ul.social-icons {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: rem(12);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: rem(12);
 }
 .social-icons li {
-    vertical-align: top;
-    display: inline;
-    height: 100px;
+  vertical-align: top;
+  display: inline;
+  height: 100px;
 }
 .social-icons a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 .fa-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
 }
 .fa-linkedin:hover {
-    background-color: #0073a4;
+  background-color: #0073a4;
 }
 .fa-github {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
 }
 .fa-github:hover {
-    background-color: #5a32a3;
+  background-color: #5a32a3;
 }
 .fa-instagram {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
 }
 .fa-instagram:hover {
-    //background: #dc2743; 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  //background: #dc2743;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
 }
 
 // SIOCIAL icons  END  ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 
-
 // Countres  - счетчик  ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 .project-items {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: rem(48);
-    @include adaptiveValue("gap", 90, 20);
-    &__sub {
-        text-align: center;
-    }
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: rem(48);
+  @include adaptiveValue("gap", 90, 20);
+  &__sub {
+    text-align: center;
+  }
 }
 .counters {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    @include adaptiveValue("font-size", 22, 14);
-    @include adaptiveValue("line-height", 36, 20);
-    max-width: rem(125);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  @include adaptiveValue("font-size", 22, 14);
+  @include adaptiveValue("line-height", 36, 20);
+  max-width: rem(125);
 }
 // Countres  END   ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 .buttons-block {
-    margin-top: rem(67);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    @include adaptiveValue("gap", 38, 16);
-    flex-wrap: wrap;
-    &__button {
-        width: rem(290);
-        border-radius: 10px;
-        font-weight: 500;
-        @include adaptiveValue("font-size", 22, 16);
-        line-height: 33px;
-        text-align: center;
-        letter-spacing: -0.531474px;
-        @include adaptiveValue("padding-top", 24, 13);
-        @include adaptiveValue("padding-bottom", 24, 13);
-
-    }
-    .btn-2 {
-        transition: 0.5s all;
-        @media (any-hover: hover){
-            &:hover{
-                background: #322f30; 
-            }
-        }
-    }
-}
-html.dark body {
-    .btn-1 {
-        background: #FFE071;
-        color: #3D3D3D;
-    }
-    .btn-2 {
-        background: #171F26;
-        color: #A3ABB2;
-    }
-}
-html.light body {
-    .btn-1 {
-        background: #FBD144;
-        color: #3D3D3D;
-    }
-    .btn-2 {
-        background: #FFFFFF;
-        color: #3D3D3D;
-        @media (any-hover: hover){
-            &:hover{
-                background: #fae190; 
-            }
-        }
-    }
-}
-// Animation yellow Button ....
-.effect {
-    display: inline-block;
-    position: relative;
+  margin-top: rem(67);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @include adaptiveValue("gap", 38, 16);
+  flex-wrap: wrap;
+  &__button {
+    width: rem(290);
+    border-radius: 10px;
+    font-weight: 500;
+    @include adaptiveValue("font-size", 22, 16);
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    @include adaptiveValue("padding-top", 24, 13);
+    @include adaptiveValue("padding-bottom", 24, 13);
+  }
+  .btn-2 {
     transition: 0.5s all;
-}
-.effect.effect-1 {
-    transition: all 0.2s linear 0s;   
-    &:before {
-      content:"";
-      background-image: url(https://maklakovgrigory.com/img/eye.svg);
-      background-repeat: no-repeat;
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      right: 20px;
-      top: 58%;
-      transform: translateY(-50%);
-      opacity: 0;
-      height: 30px;
-      width: 30px;
-      transition: all 0.2s linear 0s;
-    }   
-    &:hover {
-      text-indent: -20px;     
-      &:before {
-        opacity: 1;
-        text-indent: 0px;
+    @media (any-hover: hover) {
+      &:hover {
+        background: #322f30;
       }
     }
   }
+}
+html.dark body {
+  .btn-1 {
+    background: #ffe071;
+    color: #3d3d3d;
+  }
+  .btn-2 {
+    background: #171f26;
+    color: #a3abb2;
+  }
+}
+html.light body {
+  .btn-1 {
+    background: #fbd144;
+    color: #3d3d3d;
+  }
+  .btn-2 {
+    background: #ffffff;
+    color: #3d3d3d;
+    @media (any-hover: hover) {
+      &:hover {
+        background: #fae190;
+      }
+    }
+  }
+}
+// Animation yellow Button ....
+.effect {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s all;
+}
+.effect.effect-1 {
+  transition: all 0.2s linear 0s;
+  &:before {
+    content: "";
+    background-image: url(https://maklakovgrigory.com/img/eye.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    top: 58%;
+    transform: translateY(-50%);
+    opacity: 0;
+    height: 30px;
+    width: 30px;
+    transition: all 0.2s linear 0s;
+  }
+  &:hover {
+    text-indent: -20px;
+    &:before {
+      opacity: 1;
+      text-indent: 0px;
+    }
+  }
+}
 //==========================================  Main END  ==========================================================
 
+//=============================================SKILLS===============================================================================================
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  &__item {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__item-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+html.dark body {
+  .skills-list__item-git {
+    fill: #fffefe;
+  }
+}
+html.light body {
+  .skills-list__item-git {
+    fill: black;
+  }
+}
